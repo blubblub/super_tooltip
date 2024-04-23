@@ -231,7 +231,7 @@ class _SuperTooltipState extends State<SuperTooltip>
     }
 
     final size = renderBox.size;
-    final target = renderBox.localToGlobal(size.center(Offset.zero));
+    final target = renderBox.localToGlobal(size.topCenter(Offset.zero));
     final animation = CurvedAnimation(
       parent: _animationController,
       curve: Curves.fastOutSlowIn,
